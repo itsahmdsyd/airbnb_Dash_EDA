@@ -39,7 +39,7 @@ fig_mapbox.update_layout(height=300)
 
 # Initialize the Dash app with a Bootstrap theme
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])
-
+server = app.server
 # Define the layout of the dashboard
 app.layout = dbc.Container(
     [
